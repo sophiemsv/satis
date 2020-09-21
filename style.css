@@ -1,0 +1,443 @@
+body {
+    font-family: 'Raleway';
+}
+/* HEADER */
+.header {
+    width: 100%;
+    background-color: white;
+}
+
+.hight-head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+}
+.bottom-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.languages {
+    display: flex;
+}
+.languages:hover {
+    color: #eb212e;
+}
+.header-contact {
+    display: flex;
+}
+.header-faq {
+    display: flex;
+}
+.header-support {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list li a {
+    display: block;
+    text-decoration: none;
+    color: #969696;
+}
+.menu-list li a:hover {
+    color: #eb212e;
+}
+.custom-block-row {
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    text-decoration: none;
+}
+[class*="-lang"] {
+    color: #969696;
+    border: none;
+    background-color: white;
+}
+
+.search-btn, .mail-us-btn, .login-btn {
+    border: none;
+    background-color: white;
+}
+.menu:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.menu-list:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.menu-list li:hover > [class*="-submenu"] {
+    visibility: visible;
+    opacity: 1;
+  }
+[class*="-submenu"] {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+}
+.list-item ul {
+    background-color: #262626;
+}
+[class*="-submenu"] li a {
+    text-decoration: none;
+    color: white;
+}
+[class*="-submenu"] li a:hover {
+    color: white;
+    background-color: #eb212e;
+}
+.list-item:hover .subname {
+    color: #eb212e;
+}
+.search-btn {
+    background-image: url(images/search-black.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.mail-us-btn {
+    background-image: url(images/mail-black.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.login-btn {
+    background-image: url(images/login-black.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.search-btn:hover {
+    background-image: url(images/search-red.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.mail-us-btn:hover {
+    background-image: url(images/mail-red.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.login-btn:hover {
+    background-image: url(images/login-red.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+[class*="-text"] {
+    color: #b5b5b5;
+}
+
+/* MAIN */
+
+.body-slides{
+    margin:0;
+    padding:0;
+    z-index:-4; 
+    background: url(images/background.jpg) no-repeat;
+    background-size: 100%;
+    position: fixed;
+    width:100%;
+    height:100%;
+    top: 0;
+}
+
+.blackout {
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index:-3;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider > h2 {
+    font-size: 45px;
+    color: white;
+}
+.first-wwc, .second-wwc {
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    width: 50%;
+    color: white;
+    line-height: 1.5;
+    font-size: 17px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.discover-more-txt {
+    margin-left: 20px;
+    color: white;
+    font-size: 17px;
+}
+
+.btns-row {
+    height: 70px;
+} 
+
+.arrow-btns {
+    width: 140px;
+    height: 70px;
+}
+
+.arrow-left, .arrow-right {
+    width: 70px;
+    height: 70px;
+    background-color: #eb212e;
+}
+
+.arrow-left {
+    background-image: url(images/arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.arrow-right {
+    background-image: url(images/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.discover-more .discover-more-btn {
+    width: 30px;
+    height: 30px;
+    background-image: url(images/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.discover-more .discover-more-btn:hover {
+    cursor: pointer;
+}
+
+.about-service {
+    display: none;
+}
+.service {
+    width: 275px;
+    height: 275px;
+    padding: 60px;
+    background-color: white;
+    border: 0.5px solid #b5b5b5;
+}
+
+.service-img-one {
+    width: 97px;
+    height: 99px;
+    background-image: url(images/operator.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.service-img-two {
+    width: 128px;
+    height: 92px;
+    background-image: url(images/gov.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.service-img-three {
+    width: 130px;
+    height: 80px;
+    background-image: url(images/industry.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.service-img-four {
+    width: 108px;
+    height: 92px;
+    background-image: url(images/business.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.service-all:hover {
+    cursor: pointer;
+}
+
+.service-all:hover .about-service {
+    display: flex;
+    flex-direction: column;
+    background-color: #eb212e;
+    color: white;
+    width: 275px;
+    height: 480px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+    z-index: 5;
+}
+
+.service-all:hover .about-service > h3 {
+    font-size: 17px;
+    padding-bottom: 10px;
+}    
+
+.service-all:hover .about-service > p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.satelite-channel-block {
+    /* height: 460px; */
+    background-color: #5e5e60;
+}
+
+
+/* .satelite-background {
+    
+    -*background-image: url(images/small-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    background-color: #5e5e60;
+} */
+.small-blackout {
+    z-index: 1;
+}
+.text-container {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.text-row {
+    padding-top: 60px;
+}
+.satelite-info {
+    width: 50%;
+}
+.satelite-head {
+    line-height: 1.5;
+    margin-top: 10px;
+    font-size: 32px;
+    color: white;
+}
+.text-satelite {
+    position: relative;
+    font-size: 15px;
+    color: white;
+    margin-top: 30px;
+    line-height: 2;
+    margin-bottom: 60px;
+}
+.service-btn {
+    position: absolute;
+    margin-left: -80px;
+    margin-top: -100px;
+    align-self: flex-end;
+    background-color: #eb212e;
+    width: 160px;
+    height: 55px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: white;
+    float: right;
+
+    left: 50%;
+    z-index: 3;
+}
+
+.service-arrow-btns {
+    width: 140px;
+    display: flex;
+    align-self: flex-end;
+    margin-right: -60px;
+}
+.black-arrow-left, .black-arrow-right {
+    width: 70px;
+    height: 70px;
+    background-color: #262626;
+}
+
+.black-arrow-left {
+    background-image: url(images/arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.black-arrow-right {
+    background-image: url(images/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* --DESKTOP-- */
+
+@media (min-width:1200px) {
+    /* HEADER */
+    .header {
+        height: 82px;
+    }
+    .header-content {
+        width: 90%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+    }    
+    .hight-head {
+        padding-bottom: 10px;
+    }
+    .bottom-head {
+        margin-top: 20px;
+    }
+    .menu-list > li {
+        height: 15px;
+        margin-right: 35px;
+    }
+    .menu-list li a {
+        line-height: 15px;
+        font-size: 16px;
+    }
+
+    .list-item ul {
+        width: 275px;
+        padding-bottom: 28px;
+        padding-top: 25px;
+        position: absolute;
+        top: 82px;
+    }
+    [class*="-submenu"] li a {
+        text-decoration: none;
+        text-align: left;
+        color: white;
+        font-size: 16px;
+        padding-top: 17px;
+        padding-bottom: 18px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    
+    .custom-block {
+        width: 135px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 16px;
+    }
+    .custom-block-row {
+        width: 115px;
+    }
+    [class*="-number"] {
+        font-size: 14px;
+    }
+    [class*="-text"] {
+        font-size: 13px;
+        margin-right: 15px;
+    }
+    [class*="-lang"] {
+        font-size: 11px;
+    }
+    .search-btn, .mail-us-btn, .login-btn {
+        width: 16px;
+        height: 16px;
+    }
+    .header-faq {
+        margin-right: 45px;
+    }
+    /* MAIN */
+    .first-wwc, .second-wwc {
+        height: 180px;
+    }
+    
+    
+}
