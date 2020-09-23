@@ -51,6 +51,9 @@
     justify-content: space-between;
 }
 
+.products-row {
+    display: flex;
+}
 
 .header-content {
     width: 90%;

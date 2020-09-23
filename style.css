@@ -280,19 +280,17 @@ body {
 }
 
 .satelite-channel-block {
-    /* height: 460px; */
     background-color: #5e5e60;
 }
 
-
 /* .satelite-background {
-    
-    -*background-image: url(images/small-background.jpg);
+    background-image: url(images/small-background.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     position: absolute;
     background-color: #5e5e60;
 } */
+
 .small-blackout {
     z-index: 1;
 }
@@ -361,6 +359,47 @@ body {
     background-position: center center;
 }
 
+
+.products-background {
+    height: 365px;
+    background-image: url(images/products-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.product-text {
+    display: none;
+}
+.first-example {
+    border-right: 0.5px solid #eeeeee;
+    padding-right: 60px;
+}
+.first-example, .second-example {
+    padding-top: 60px;
+    width: 50%;
+    height: 365px;
+}
+.second-example {
+    padding-left: 60px;
+}
+.example-head {
+    line-height: 1.5;
+    font-size: 18px;
+}
+.products-btn {
+    position: absolute;
+    margin-left: -80px;
+    margin-top: -100px;
+    align-self: flex-end;
+    background-color: #eb212e;
+    width: 160px;
+    height: 55px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: white;
+    float: right;
+    left: 50%;
+    z-index: 3;
+}
 /* --DESKTOP-- */
 
 @media (min-width:1200px) {
@@ -406,8 +445,6 @@ body {
         padding-left: 40px;
         padding-right: 40px;
     }
-
-    
     .custom-block {
         width: 135px;
         padding-left: 10px;
